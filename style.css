@@ -265,7 +265,17 @@ a {
 .subscribe form {
     box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.14);
     transition: .3s;
-    max-width: 900px;
+    right: 50%;
+    width: 900px;
+}
+@media (max-width: 1200px) {
+    .subscribe form {
+    width: 90%;
+    bottom: -30px;
+    }
+    .subscribe form input {
+    width: 100%;
+    }
 }
 .subscribe form:focus-within {
     box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.29);
